@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
@@ -5,7 +11,7 @@ body {
     background-color: hsl(180, 52%, 96%);
 }
 
-.header {
+#header {
     background-image: url(../images/bg-header-desktop.svg);
     height: 156px;
     background-repeat: no-repeat;
@@ -27,18 +33,83 @@ body {
 
 .shadow {
     box-shadow: 0 2px 6px hsl(180, 8%, 52%);
-}
+} 
 
-.col-md-7 { /* button box */
+.col-md-6 { /* button box */
     text-align: right;
     margin: auto;
 } 
+
+h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(180, 14%, 20%);
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: hsl(180, 29%, 50%);
+    font-size: 15px; 
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.status {
+    color: hsl(180, 8%, 52%);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.bg-green {
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 31%, 95%);
+    text-transform: uppercase;
+    
+}
+
+.bg-black {
+    background-color: hsl(180, 14%, 20%);
+    color: hsl(180, 31%, 95%);
+    text-transform: uppercase;
+}
+
+.badge-pill {
+    padding: 0.5rem;
+    margin: 0.120rem;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: start; 
+    align-items: center;
+    padding: 20px 0;
+}
+
+.col-md-4 {
+    padding-top: 10px;
+}
+
+img {
+    margin: 20px 10px;
+    width: 120px;
+    height: 120px;
+}
 
 .btn {
     font-size: 15px;
     font-weight: 700;
     color: hsl(180, 29%, 50%);
     background-color: hsl(180, 52%, 96%);
+    margin-right: 0.4em;
 }
 
 .btn:hover {
@@ -52,60 +123,80 @@ body {
     box-shadow: none;
  }
 
-h2 {
-    font-size: 20px;
-    font-weight: 700;
-    color: hsl(180, 14%, 20%);
-    padding-bottom: 10px;
+#filterbar {
+    position: relative;
+    top: -13px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 187px;
+    margin-left: 187px;
+    justify-content: space-between;
+    border-radius: 1px;
 }
 
-h5 {
+#clear {
+    display: flex;
+    align-self: center;
+}
+  
+#clear:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#filterbar.card {
+    border: none;
+    padding: 1rem;
+}
+  
+#filterbar.show {
+    visibility: visible;
+}
+  
+#filterbar.hide {
+    visibility: hidden;
+}
+  
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    display: grid;
+    grid-template-columns: 1fr 17px;
     color: hsl(180, 29%, 50%);
-    font-size: 15px; 
-    font-weight: 700;
-    padding-bottom: 10px;
-}
-
-.situation {
-    color: hsl(180, 8%, 52%);
+    background-color: hsl(180, 52%, 96%);
+    margin: 0.25rem;
     font-size: 15px;
-    font-weight: 500;
-    padding-bottom: 10px;
+    font-weight: 700;
+    border-radius: 2.5px;
 }
-
-.circle {
-    display: inline-table;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: hsl(180, 8%, 52%);
-    margin: 2% 3%;
-    padding: 0;
+  
+.filter-btn i {
+    font-size: 15px;
 }
-
-.bg-green {
+  
+.filter-btn p {
+    padding: 0.50rem;
+    height: 20px;
+    text-align: center;
+}
+  
+.filter-btn div {
+    padding: 0.25rem;
     background-color: hsl(180, 29%, 50%);
-    color: hsl(180, 31%, 95%);
-    text-transform: uppercase;
-    padding-top: 6px;
+    color: #fff;
+    border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.bg-black {
+  
+.filter-btn div:hover {
+    cursor: pointer;
     background-color: hsl(180, 14%, 20%);
-    color: hsl(180, 31%, 95%);
-    text-transform: uppercase;
-    padding-top: 6px;
-}
-
-.col-md-4 {
-    padding-left: 7%;
-    padding-top: 10px;
-}
-
-img {
-    margin-top: 10px;
-    width: 100px;
-    height: 100px;
 }
 
 @media screen and (max-width: 575px) {
@@ -115,21 +206,11 @@ img {
         background-size: 100%;
     }
 
-    .col-md-7 { /* button box */
+    .col-md-6 { /* button box */
         text-align: left;
-        margin: auto;
+        margin: 0;
+        padding: 0;
     } 
-
-    img {
-        position: relative;
-        bottom: 50%;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-
-    .col-md-1 {
-        max-height: 80px;
-    }
 
     .btn {
         margin-bottom: 5px;

@@ -9,328 +9,38 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  
+  <script src="https://kit.fontawesome.com/d92a3004ed.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Job Listings</title>
 
 </head>
 <body>
 
-  <header class="header"></header>
-
-    <div class="container">
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/photosnap.svg" alt="photosnap">
+  <div class="main-container">
+    <main id="content-wrap">
+      <header id="header"></header>
+      <div id="content">
+        <div id="filterbar" class="card hide">
+          <div id="filters"></div>
+          <div id="clear">Clear</div>
         </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Photosnap
-              <span class="badge badge-pill bg-green">New!</span>
-              <span class="badge badge-pill bg-black">Featured</span>
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Senior Frontend Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">1d ago</span>
-            <div class="circle"></div>
-            <span class="situation">Full Time</span>
-            <div class="circle"></div>
-            <span class="situation">USA only</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Frontend</button>
-          <button type="button job-tag" class="btn">Senior</button>
-          <button type="button job-tag" class="btn">HTML</button>
-          <button type="button job-tag" class="btn">CSS</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-        </div>
+        <div id="container" class="container"></div>
       </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/manage.svg" alt="manage">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Manage
-              <span class="badge badge-pill bg-green">New!</span>
-              <span class="badge badge-pill bg-black">Featured</span>
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Fullstack Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">1d ago</span>
-            <div class="circle"></div>
-            <span class="situation">Part Time</span>
-            <div class="circle"></div>
-            <span class="situation">Remote</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Fullstack</button>
-          <button type="button job-tag" class="btn">Midweight</button>
-          <button type="button job-tag" class="btn">Python</button>
-          <button type="button job-tag" class="btn">React</button>
-        </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Atugriceri" target="_blank">Alper Tugriçeri</a>.
       </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/account.svg" alt="account">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Account
-              <span class="badge badge-pill bg-green">New!</span>
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Junior Frontend Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">2d ago</span>
-            <div class="circle"></div>
-            <span class="situation">Part Time</span>
-            <div class="circle"></div>
-            <span class="situation">USA only</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Frontend</button>
-          <button type="button job-tag" class="btn">Junior</button>
-          <button type="button job-tag" class="btn">React</button>
-          <button type="button job-tag" class="btn">Sass</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/myhome.svg" alt="myhome">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              MyHome
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Junior Frontend Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">5d ago</span>
-            <div class="circle"></div>
-            <span class="situation">Contract</span>
-            <div class="circle"></div>
-            <span class="situation">USA only</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Frontend</button>
-          <button type="button job-tag" class="btn">Junior</button>
-          <button type="button job-tag" class="btn">CSS</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/loop-studios.svg" alt="loopstudios">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Loop Studios
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Software Engineer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">1w ago</span>
-            <div class="circle"></div>
-            <span class="situation">Full Time</span>
-            <div class="circle"></div>
-            <span class="situation">Worldwide</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Fullstack</button>
-          <button type="button job-tag" class="btn">Midweight</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-          <button type="button job-tag" class="btn">Sass</button>
-          <button type="button job-tag" class="btn">Ruby</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/faceit.svg" alt="faceit">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              FaceIt
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Junior Backend Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">2w ago</span>
-            <div class="circle"></div>
-            <span class="situation">Full Time</span>
-            <div class="circle"></div>
-            <span class="situation">UK only</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Backend</button>
-          <button type="button job-tag" class="btn">Junior</button>
-          <button type="button job-tag" class="btn">Ruby</button>
-          <button type="button job-tag" class="btn">RoR</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/shortly.svg" alt="shortly">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Shortly
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Junior Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">2w ago</span>
-            <div class="circle"></div>
-            <span class="situation">Full Time</span>
-            <div class="circle"></div>
-            <span class="situation">Worldwide</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Frontend</button>
-          <button type="button job-tag" class="btn">Junior</button>
-          <button type="button job-tag" class="btn">HTML</button>
-          <button type="button job-tag" class="btn">Sass</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/insure.svg" alt="insure">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Insure
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Junior Frontend Developer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">2w ago</span>
-            <div class="circle"></div>
-            <span class="situation">Full Time</span>
-            <div class="circle"></div>
-            <span class="situation">USA only</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Frontend</button>
-          <button type="button job-tag" class="btn">Junior</button>
-          <button type="button job-tag" class="btn">Vue</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-          <button type="button job-tag" class="btn">Sass</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/eyecam-co.svg" alt="eyecam-co">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              Eyecam Co.
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Full Stack Engineer</h2>
-          </div>
-          <div class="row">
-            <span class="situation">3w ago</span>
-            <div class="circle"></div>
-            <span class="situation">Full Time</span>
-            <div class="circle"></div>
-            <span class="situation">Worldwide</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Fullstack</button>
-          <button type="button job-tag" class="btn">Midweight</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-          <button type="button job-tag" class="btn">Django</button>
-          <button type="button job-tag" class="btn">Python</button>
-        </div>
-      </div>
-
-      <div class="row mb-5 p-2 shadow">
-        <div class="col-md-1">
-          <img src="images/the-air-filter-company.svg" alt="the-air-filter-company">
-        </div>
-        <div class="col-md-4">
-          <div class="row">
-            <h5>
-              The Air Filter Company
-            </h5>
-          </div>
-          <div class="row">
-            <h2>Front-end Dev</h2>
-          </div>
-          <div class="row">
-            <span class="situation">1mo ago</span>
-            <div class="circle"></div>
-            <span class="situation">Part Time</span>
-            <div class="circle"></div>
-            <span class="situation">Worldwide</span>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <button type="button job-tag" class="btn">Frontend</button>
-          <button type="button job-tag" class="btn">Junior</button>
-          <button type="button job-tag" class="btn">React</button>
-          <button type="button job-tag" class="btn">Sass</button>
-          <button type="button job-tag" class="btn">JavaScript</button>
-        </div>
-      </div>
-
-    </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Atugriceri" target="_blank">Alper Tugriçeri</a>.
+    </footer>
   </div>
+  
+
+  
   
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="app/app.js"></script>
+  <script src="data.json"></script>
 </body>
 </html>
